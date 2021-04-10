@@ -1,7 +1,7 @@
 class Bob {
     constructor(x, y,r) {
       var options = {
-          'isStatic' :true,
+          'isStatic' :false,
           'restitution':0.3,
           'friction':0.5,
           'density':1.2
@@ -22,7 +22,7 @@ class Bob {
       push();
       translate(pos.x, pos.y);
       rectMode(CENTER);
-      fill("pink");
+      fill("magenta");
       ellipse(0, 0, this.r, this.r);
       pop();
     }
